@@ -30,7 +30,7 @@ const browserName = detectBrowser();
 window.addEventListener('load', () => {
   setInterval(() => {
     const now = new Date();
-    time.textContent = `Date ${days[now.getDay()]}, ${now.getDate()} ${months[now.getMonth()]} ${now.getFullYear()} - Time ${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;
-    browser.textContent = `You are using : ${browserName}`;
+    time.textContent = `${days[now.getDay()]}, ${now.getDate()} ${months[now.getMonth()]} ${now.getFullYear()} at ${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;
+    browser.textContent = `${browserName}`;
   }, 1000);
 });
