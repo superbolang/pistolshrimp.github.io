@@ -22,7 +22,6 @@ function detectBrowser() {
   } else if (userAgent.indexOf('Trident') > -1 || userAgent.indexOf('MSIE') > -1) {
     return 'Internet Explorer';
   }
-
   return 'Unknown';
 }
 const browserName = detectBrowser();
